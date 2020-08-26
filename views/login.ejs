@@ -1,0 +1,34 @@
+<%- include('header') %>
+
+<div>
+  <div class="row" style="padding: 100px 20px;">
+    <div class="col-lg-4 col-md-3 col-1"></div>
+
+    <div class="col-lg-4 col-md-6 col-10" style="background-color: rgba(105, 100, 100, 0.5); padding: 40px;">
+      <h1 style="padding: 0;">Login</h1>
+      <br />
+      <!-- Makes POST request to /login route -->
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" />
+        </div>
+        <button type="submit" class="btn btn-dark">Login</button>
+        <br /><br />
+        <p style="color: aliceblue; padding: 0; text-align: center;">
+          <b> Don't have an account? <a href="/register">Sign Up</a></b>
+        </p>
+      </form>
+
+      <!-- </div>
+      </div> -->
+    </div>
+    <div class="col-lg-4 col-md-3 col-1"></div>
+  </div>
+</div>
+
+<%- include('footer') %>
